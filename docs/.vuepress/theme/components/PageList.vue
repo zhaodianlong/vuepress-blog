@@ -1,19 +1,22 @@
 <template>
   <div class="pagelist">
-    <el-card class="box-card" shadow="hover" v-for="(item, index) in list" :key="index">
-      <div slot="header" class="clearfix">
-        <div class="title" @click="toPage(item)">{{item.frontmatter.title}}</div>
-        <el-button style="float: right; padding: 3px 0" type="text" @click="toPage(item)">阅读全文</el-button>
-      </div>
-      {{item.frontmatter.description}}
-      <div class="footer">
-        <div class="author-box"><i class="el-icon-user-solid"></i>{{item.frontmatter.author}}</div>
-        <div class="date-box">{{item.lastUpdated | dateFormat}}</div>
-      </div>
-    </el-card>
+    <div v-for="(item, index) in list" :key="index" @click="toPage(item)">
+      <el-card class="box-card" shadow="hover">
+        <div slot="header" class="clearfix">
+          <div class="title">{{item.frontmatter.title}}</div>
+          <el-button style="float: right; padding: 3px 0" type="text">阅读全文</el-button>
+        </div>
+        {{item.frontmatter.description}}
+        <div class="footer">
+          <div class="author-box"><i class="el-icon-user-solid"></i>{{item.frontmatter.author}}</div>
+          <div class="date-box">{{item.lastUpdated | dateFormat}}</div>
+        </div>
+      </el-card>
+    </div>
     <div class="pagination-box">
       <el-pagination
         background
+        class="pagination"
         :current-page.sync="pageNum"
         :page-size="pageSize"
         :page-sizes="[2, 3, 4, 10]"
@@ -93,17 +96,21 @@ export default {
 <style lang="stylus" scoped>
   .pagelist
     max-width $contentWidth
-    margin 6rem auto 0
+    margin 4rem auto 0
     padding 2rem 2.5rem
     @media (max-width: $MQNarrow)
       padding 2rem
     @media (max-width: $MQMobileNarrow)
       padding 1.5rem
+    .pagination-box
+      overflow hidden
+      .pagination
+        float right
   .box-card
     margin-bottom 30px
+    cursor pointer
     .clearfix .title
       display inline-block
-      cursor pointer
     .footer
       margin-top 18px
       font-size 14px

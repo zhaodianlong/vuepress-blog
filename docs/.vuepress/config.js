@@ -19,7 +19,6 @@ module.exports = {
       { text: '杂记', link: '/notes/' },
       { text: '关于我', link: '/about/' }
     ],
-    lastUpdated: 'Last Updated',
-  },
-  plugins: ['@vuepress/back-to-top']
+    lastUpdated: '最后更新',
+  }
 }

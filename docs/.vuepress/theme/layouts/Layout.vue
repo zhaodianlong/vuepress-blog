@@ -40,6 +40,7 @@
         <slot name="page-bottom" />
       </template>
     </Page>
+    <el-backtop></el-backtop>
   </div>
 </template>
 

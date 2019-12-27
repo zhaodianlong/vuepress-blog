@@ -30,6 +30,12 @@ $wrapper
   @media (max-width: $MQMobileNarrow)
     padding 1.5rem
 .page
+  margin-top 3.6rem
+  padding-left 16rem
   padding-bottom 2rem
   display block
+  @media (max-width: $MQMobileNarrow)
+    padding-left 0
+.sidebar
+  width 16rem
 </style>
