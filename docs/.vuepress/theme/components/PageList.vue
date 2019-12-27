@@ -35,7 +35,7 @@ export default {
       bSwitch: false,
       pageNum: 1,
       pageSize: 2,
-      totalCount: ''
+      totalCount: 0
     }
   },
   mounted () {

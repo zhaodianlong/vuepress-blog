@@ -3,6 +3,8 @@ module.exports = {
   description: 'BUG 制造者',
   themeConfig: {
     // logo: '/images/logo.png',
+    search: true,
+    searchMaxSuggestions: 5,
     nav: [
       { text: '主页', link: '/' },
       {
