@@ -71,7 +71,11 @@ export default {
       const list  = JSON.parse(this.listString);
       const startIndex = 0 + (this.pageNum -1)*this.pageSize;
       const endIndex = this.pageSize + (this.pageNum -1)*this.pageSize;
-      this.list = list.slice(startIndex, endIndex);
+      this.list = await list.slice(startIndex, endIndex);
+      await this.scrollTop();
+    },
+    async scrollTop () {
+      await window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   },
   filters: {

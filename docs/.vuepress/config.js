@@ -18,5 +18,6 @@ module.exports = {
       { text: '关于我', link: '/about/' }
     ],
     lastUpdated: 'Last Updated',
-  }
+  },
+  plugins: ['@vuepress/back-to-top']
 }
