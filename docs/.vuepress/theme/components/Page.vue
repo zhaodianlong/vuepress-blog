@@ -3,19 +3,18 @@
     <slot name="top" />
 
     <Content class="theme-default-content" />
-    <PageEdit />
 
     <PageNav v-bind="{ sidebarItems }" />
-
+    <PageFooter />
     <slot name="bottom" />
   </main>
 </template>
 
 <script>
-import PageEdit from '@theme/components/PageEdit.vue'
-import PageNav from '@theme/components/PageNav.vue'
+import PageNav from '@theme/components/PageNav.vue';
+import PageFooter from '@theme/components/PageFooter.vue';
 export default {
-  components: { PageEdit, PageNav },
+  components: { PageNav, PageFooter },
   props: ['sidebarItems']
 }
 </script>

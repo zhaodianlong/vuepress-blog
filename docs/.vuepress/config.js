@@ -1,8 +1,10 @@
 module.exports = {
   title: '鱼丸蛋面',
   description: 'BUG 制造者',
+  base: '/vuepress-blog/',
   themeConfig: {
-    // logo: '/images/logo.png',
+    repo: 'zhaodianlong/vuepress-blog',
+    repoLabel: 'GitHub',
     search: true,
     searchMaxSuggestions: 5,
     nav: [
@@ -19,6 +21,6 @@ module.exports = {
       { text: '杂记', link: '/notes/' },
       { text: '关于我', link: '/about/' }
     ],
-    lastUpdated: '最后更新',
+    lastUpdated: '最后更新'
   }
 }
