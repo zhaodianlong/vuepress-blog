@@ -1,9 +1,8 @@
 module.exports = {
   title: '鱼丸蛋面',
   description: 'BUG 制造者',
-  base: '/vuepress-blog/',
   themeConfig: {
-    repo: 'zhaodianlong/vuepress-blog',
+    repo: 'zhaodianlong',
     repoLabel: 'GitHub',
     search: true,
     searchMaxSuggestions: 5,
@@ -14,7 +13,8 @@ module.exports = {
         ariaLabel: '博文',
         items: [
           { text: '前端', link: '/blog/frontend/' },
-          { text: 'Node', link: '/blog/node/' }
+          { text: 'Node', link: '/blog/node/' },
+          { text: '面试宝典', link: '/blog/interview/' }
         ]
       },
       { text: '文档', link: '/document/' },
