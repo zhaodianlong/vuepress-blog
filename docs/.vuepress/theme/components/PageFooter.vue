@@ -32,9 +32,10 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .page-footer
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 0 2.5rem;
+  max-width: 740px
+  margin: 0 auto 50px
+  padding: 0 2.5rem
+  overflow hidden
   .date-box
     font-size 14px
     color #909399

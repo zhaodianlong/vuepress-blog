@@ -56,13 +56,11 @@ export default {
           return page;
         }
       })
-      console.log(this.$page, pages, categoryData)
       this.totalCount = categoryData.length;
       this.listString = JSON.stringify(categoryData);
       this.handlePageChange(this.pageNum);
     },
     async toPage (item) {
-      console.log(item.regularPath)
       await this.$router.push(item.regularPath)
     },
     async handleSizeChange (val) {
