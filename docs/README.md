@@ -12,5 +12,5 @@ features:
   details: 平时编写的工具及有趣的插件的文档。
 - title: 日常随笔
   details: 记录生活的点点滴滴。
-footer: MIT Licensed | Copyright © 2019 Zhaodianlong
+footer: MIT Licensed | Copyright © 2019 Zhaodianlong 
 ---

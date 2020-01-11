@@ -1,20 +1,20 @@
 <template>
   <main class="page">
     <slot name="top" />
-
     <Content class="theme-default-content" />
-
     <PageNav v-bind="{ sidebarItems }" />
     <PageFooter />
     <slot name="bottom" />
+    <Valine />
   </main>
 </template>
 
 <script>
 import PageNav from '@theme/components/PageNav.vue';
 import PageFooter from '@theme/components/PageFooter.vue';
+import Valine from '@theme/components/Valine.vue';
 export default {
-  components: { PageNav, PageFooter },
+  components: { PageNav, PageFooter, Valine },
   props: ['sidebarItems']
 }
 </script>

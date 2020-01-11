@@ -1,5 +1,11 @@
 <template>
   <div class="page-footer">
+    <div class="read-box">
+      <span :id="$route.path" class="leancloud-visitors view" data-flag-title="Chrome">
+          <span class="post-meta-item-text">阅读量 </span>
+          <span class="leancloud-visitors-count">0</span>
+      </span>
+    </div>
     <div class="date-box">
       {{updateDate}}
     </div>
@@ -35,9 +41,11 @@ export default {
   max-width: 740px
   margin: 0 auto 50px
   padding: 0 2.5rem
-  overflow hidden
+  overflow: hidden
+  font-size: 14px
+  color: #909399
+  .read-box
+    float: left
   .date-box
-    font-size 14px
-    color #909399
-    float right
+    float: right
 </style>
