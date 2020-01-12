@@ -6,7 +6,6 @@
 export default {
   name: 'Valine',
   mounted: function(){
-    console.log(this.$route.path)
     // require window 
     const Valine = require('valine');
     if (typeof window !== 'undefined') {

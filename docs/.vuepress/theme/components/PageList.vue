@@ -6,7 +6,7 @@
           <div class="title">{{item.frontmatter.title}}</div>
           <el-button style="float: right; padding: 3px 0" type="text">阅读全文</el-button>
         </div>
-        {{item.frontmatter.description}}
+        <div class="content-box">{{item.frontmatter.description}}</div>
         <div class="footer">
           <div class="author-box"><i class="el-icon-user-solid"></i>{{item.frontmatter.author}}</div>
           <div class="date-box">{{item.lastUpdated | dateFormat}}</div>
@@ -109,6 +109,9 @@ export default {
     cursor pointer
     .clearfix .title
       display inline-block
+    .content-box
+      font-size 14px
+      color #909399
     .footer
       margin-top 18px
       font-size 14px
